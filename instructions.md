@@ -11,7 +11,7 @@ There are two Python files which you will modify in this repository to complete 
 * writeup.md
 
 Once you've completed the coding portion of this project in the `main.py` file and ensured that your output is correct, you will then provide a writeup in the file `writeup.md`, where you will answer analytical questions on the data you've analyzed.
-
+python
 **main.py**
 
 You can run this module by typing and executing the following command in your terminal: 

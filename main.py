@@ -3,6 +3,8 @@ def clean_heartrate_data(data: list) -> tuple:
     Clean raw heart-rate data by removing malformed or impossible values.
     """
     pass
+#delete pass and start code 
+#remove: spaces and NO DATA
 
 
 def average(data: list) -> float:
@@ -45,15 +47,24 @@ def run(file: str):
     data = []
 
     # open file using file I/O and read it into the `data` list
-    file_obj = open()
-    
-    data = file_obj.readlines()
+    file_object = open(file)
+
+    data = file_object.readlines()    
 
     # Use `clean_heartrate_data` to clean the data and remove invalid entries
-    cleaned_list, removed_values = ...
+    cleaned_list, removed_values 
+
+       
+    for data_entries in data:
+        remove_data = data_entries.strip('NO DATA')
+        clean_heartrate_data = [item for item in data if item]
+
+    
+    print(clean_heartrate_data(data))
 
     # calculate the average, median, and range of this file using the functions you've wrote
     ...
+    
 
     # print out your data quality measure to the console
     ...
