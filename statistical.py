@@ -1,12 +1,11 @@
-from data_cleaning import clean_heartrate_data
 import statistics as stats
+import math as m
 
 def average(data: list) -> float:
     """
     Calculate average of a list of integers using a for-loop. Assumes data is clean.
     """
     total = 0
-    numbers = data
     for num in data:
         total += num
     average = total / len(data)
@@ -36,3 +35,24 @@ def range(data: list) -> float:
     difference = x - y
     return difference    
 
+def test(data: list[int]):    
+
+#  New Calculations for TLAB2: using the stats function to calculate mean/med/range, and variance
+    list_average = stats.mean(data)
+    print(round(list_average, 2))
+
+    list_median = stats.median(data)
+    print(round(list_median, 2))
+
+    list_range = range(data)
+    print(round(list_range, 2))
+
+    stats.variance(data)
+    var1 = stats.variance(data)
+    print("{:.2f}".format(var1))
+
+    m.sqrt(var1)
+    stand_dev = m.sqrt(var1)
+    print("{:.2f}".format(stand_dev))
+
+    
